@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+app:
+  base-url: http://localhost:8080
+  alias:
+    length: 7
+    max-retries: 3
