@@ -1,3 +1,4 @@
+target/
 # Maven
 target/
 pom.xml.tag
@@ -49,4 +50,8 @@ Thumbs.db
 *.jar
 *.war
 *.ear
+.idea/
+*.iml
+.mvn/
+!.mvn/wrapper/maven-wrapper.properties
 
