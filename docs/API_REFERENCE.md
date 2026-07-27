@@ -542,10 +542,7 @@ Contact DevOps for enterprise rate limit adjustments.
 
 ## Postman Collection
 
-**Import URL:**
-```
-[Postman Collection Link - TBD]
-```
+**Import file:** `postman-collection-sample-data.json` (project root)
 
 **Alternative:** Import Swagger JSON:
 ```
@@ -555,8 +552,9 @@ http://localhost:8080/api/openapi.json
 **Steps:**
 1. Open Postman
 2. Click "Import"
-3. Paste `http://localhost:8080/api/openapi.json`
-4. Click Import
+3. Choose the file `postman-collection-sample-data.json` from the project root
+4. Or paste `http://localhost:8080/api/openapi.json`
+5. Click Import
 
 ---
 

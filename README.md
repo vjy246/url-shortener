@@ -18,6 +18,14 @@ A Spring Boot REST API for creating, managing, and tracking shortened URLs with 
 
 ---
 
+## 📦 Project Evidence Pack
+
+- `docs/project/PROJECT_RESPONSE.md`
+- `docs/project/RUBRIC_TRACEABILITY.md`
+- `docs/project/AI_EXECUTION_LOG.md`
+
+---
+
 ## 🔍 Looking Up URLs - Two Methods
 
 ### Method 1: By Custom Alias (Recommended)
@@ -36,12 +44,16 @@ curl http://localhost:8080/api/urls/abc123XYZ
 
 ### Run the Application
 ```powershell
-./mvnw spring-boot:run
+# Option A: IntelliJ
+# Run com.urlshortener.UrlShortenerServiceApplication
+
+# Option B: Maven CLI (if mvn is installed)
+mvn spring-boot:run
 ```
 
 ### Run All Tests
 ```powershell
-./mvnw test
+mvn test
 ```
 
 ---
@@ -149,4 +161,8 @@ The application uses an **embedded H2 file-based database** (data persists betwe
 - Data is now saved to disk in the `./data/` directory
 - Database files persist between application restarts
 - To reset the database, delete the `./data/` folder and restart the app
+- Or use the safe reset script (backs up old DB files first):
 
+```powershell
+.\reset-local-db.ps1 -Force
+```

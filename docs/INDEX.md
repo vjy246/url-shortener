@@ -14,6 +14,7 @@
 |----------|---------|----------|-----------|
 | [REQUIREMENTS.md](./REQUIREMENTS.md) | Functional & non-functional requirements, acceptance criteria | Product Managers, Business Analysts | 15 min |
 | [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) | Setup, deployment, configuration steps | DevOps, Deployment Engineers | 20 min |
+| [requirement-gathering/README.md](./requirement-gathering/README.md) | Interview questions and stakeholder PRDs | Product, Sales, Finance, Ops | 15 min |
 
 ### For Engineering & Development
 
@@ -37,6 +38,22 @@
 | Document | Purpose | Audience | Read Time |
 |----------|---------|----------|-----------|
 | [ARCHITECTURE_DECISIONS.md](./ARCHITECTURE_DECISIONS.md) | ADRs, design decisions, trade-offs | Architects, Tech Leads | 20 min |
+
+### For Project Reviewers
+
+| Document | Purpose | Audience | Read Time |
+|----------|---------|----------|-----------|
+| [project/README.md](./project/README.md) | Entry point to the project evidence pack | Interview Panel, Hiring Team | 5 min |
+| [project/PROJECT_RESPONSE.md](./project/PROJECT_RESPONSE.md) | End-to-end project response with scenarios, risks, and outcomes | Interview Panel, Hiring Team | 15 min |
+| [project/RUBRIC_TRACEABILITY.md](./project/RUBRIC_TRACEABILITY.md) | Criterion-by-criterion rubric evidence mapping | Interview Panel, Evaluators | 10 min |
+| [project/AI_EXECUTION_LOG.md](./project/AI_EXECUTION_LOG.md) | AI usage governance, validation loop, and ownership evidence | Interview Panel, Engineering Leads | 10 min |
+
+### For Testing & Sample Data
+
+| Document | Purpose | Audience | Read Time |
+|----------|---------|----------|-----------|
+| [testing/README.md](./testing/README.md) | Testing docs index and quick links | Developers, QA | 5 min |
+| [sample-data/README.md](./sample-data/README.md) | Sample data docs index and quick links | Developers, QA, Demo Users | 5 min |
 
 ---
 
@@ -87,7 +104,7 @@
 
 | Metric | Count |
 |--------|-------|
-| Total documents | 9 |
+| Total documents | 15+ |
 | Total sections | 50+ |
 | Total pages (estimated) | 50+ |
 | Code examples | 30+ |
@@ -153,9 +170,8 @@ Before production release, verify:
 | "How do I fix X issue?" | [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) | Support / Ops |
 | "What are security considerations?" | [SECURITY_GUIDE.md](./SECURITY_GUIDE.md) | Security Team |
 | "How do we optimize performance?" | [PERFORMANCE_TUNING.md](./PERFORMANCE_TUNING.md) | Performance Team |
+| "How do I review project evidence?" | [project/README.md](./project/README.md) | Interview Panel |
 
 ---
 
 **Next Step:** Choose your role above and start with the recommended document!
-
-
