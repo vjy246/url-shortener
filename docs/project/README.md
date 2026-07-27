@@ -4,7 +4,7 @@ This folder contains the reviewer-facing artifacts for **AI-Proficient Software 
 
 ## Documents
 - [PROJECT_RESPONSE.md](./PROJECT_RESPONSE.md) - Executive summary, scenarios, assumptions, risks, and validation
-- [RUBRIC_TRACEABILITY.md](./RUBRIC_TRACEABILITY.md) - Rubric-to-artifact evidence mapping
+- [RUBRIC_TRACEABILITY.md](./Index_TRACEABILITY) - Rubric-to-artifact evidence mapping
 - [AI_EXECUTION_LOG.md](./AI_EXECUTION_LOG.md) - AI usage workflow, prompt discipline, and ownership evidence
 
 ## Source Materials

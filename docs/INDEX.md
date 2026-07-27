@@ -45,7 +45,7 @@
 |----------|---------|----------|-----------|
 | [project/README.md](./project/README.md) | Entry point to the project evidence pack | Interview Panel, Hiring Team | 5 min |
 | [project/PROJECT_RESPONSE.md](./project/PROJECT_RESPONSE.md) | End-to-end project response with scenarios, risks, and outcomes | Interview Panel, Hiring Team | 15 min |
-| [project/RUBRIC_TRACEABILITY.md](./project/RUBRIC_TRACEABILITY.md) | Criterion-by-criterion rubric evidence mapping | Interview Panel, Evaluators | 10 min |
+| [project/RUBRIC_TRACEABILITY.md](./project/Index_TRACEABILITY) | Criterion-by-criterion rubric evidence mapping | Interview Panel, Evaluators | 10 min |
 | [project/AI_EXECUTION_LOG.md](./project/AI_EXECUTION_LOG.md) | AI usage governance, validation loop, and ownership evidence | Interview Panel, Engineering Leads | 10 min |
 
 ### For Testing & Sample Data
