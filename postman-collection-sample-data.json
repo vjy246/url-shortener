@@ -1,0 +1,452 @@
+{
+  "info": {
+    "_postman_id": "url-shortener-sample-data-collection",
+    "name": "URL Shortener - Sample Test Data",
+    "description": "Collection with pre-configured sample data requests for URL Shortener API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "SETUP - Import/Create All Sample Data",
+      "item": [
+        {
+          "name": "1. Create - Spring Boot Repo",
+          "item": [],
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://github.com/spring-projects/spring-boot\",\n  \"customAlias\": \"spring-boot-repo\",\n  \"description\": \"Spring Boot - Official Repository\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "2. Create - Python Downloads",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://www.python.org/downloads\",\n  \"customAlias\": \"python-downloads\",\n  \"description\": \"Python Official Downloads\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "3. Create - Java 17 Docs",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://docs.oracle.com/javase/17/docs/api\",\n  \"customAlias\": \"java-17-docs\",\n  \"description\": \"Java 17 API Documentation\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "4. Create - MDN JavaScript",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://developer.mozilla.org/en-US/docs/Web/JavaScript\",\n  \"customAlias\": \"mdn-javascript\",\n  \"description\": \"MDN JavaScript Documentation\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "5. Create - LinkedIn Jane",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://www.linkedin.com/in/jane-developer-123456\",\n  \"customAlias\": \"linkedin-jane\",\n  \"description\": \"Jane Developer's LinkedIn Profile\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "6. Create - Twitter TechGirl",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://twitter.com/techgirl_2024\",\n  \"customAlias\": \"twitter-techgirl\",\n  \"description\": \"TechGirl Twitter Account\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "7. Create - Microservices Guide",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://medium.com/@author/how-to-build-microservices-2024\",\n  \"customAlias\": \"microservices-guide\",\n  \"description\": \"How to Build Microservices - Medium Article\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "8. Create - ASUS Gaming Laptop",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://www.amazon.com/ASUS-Gaming-Laptop-RTX4060-Backlit/dp/B0CX5KN8NC\",\n  \"customAlias\": \"asus-gaming-laptop\",\n  \"description\": \"ASUS Gaming Laptop on Amazon\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "9. Create - Java Bootcamp Udemy",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://www.udemy.com/course/the-complete-java-development-bootcamp\",\n  \"customAlias\": \"java-bootcamp-udemy\",\n  \"description\": \"Complete Java Development Bootcamp\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "10. Create - AI Startup Funding",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://www.techcrunch.com/2024/01/15/ai-startup-raises-100-million\",\n  \"customAlias\": \"ai-startup-funding\",\n  \"description\": \"TechCrunch - AI Startup Funding News\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "11. Create - YouTube Tutorial",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\",\n  \"customAlias\": \"youtube-tutorial\",\n  \"description\": \"Popular YouTube Tutorial\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        },
+        {
+          "name": "12. Create - Stack Overflow JSON Parsing",
+          "request": {
+            "method": "POST",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"originalUrl\": \"https://stackoverflow.com/questions/12345678/how-to-parse-json-in-java\",\n  \"customAlias\": \"so-json-parsing\",\n  \"description\": \"Stack Overflow - JSON Parsing in Java\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "RETRIEVE - Get URLs",
+      "item": [
+        {
+          "name": "Get - Spring Boot Repo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/spring-boot-repo",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "spring-boot-repo"]
+            }
+          }
+        },
+        {
+          "name": "Get - Python Downloads",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/python-downloads",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "python-downloads"]
+            }
+          }
+        },
+        {
+          "name": "Get - Java 17 Docs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/java-17-docs",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "java-17-docs"]
+            }
+          }
+        },
+        {
+          "name": "Get All URLs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls",
+              "host": ["{{base_url}}"],
+              "path": ["urls"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "REDIRECT - Track Clicks",
+      "item": [
+        {
+          "name": "Redirect - Spring Boot Repo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/redirect/spring-boot-repo",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "redirect", "spring-boot-repo"]
+            }
+          }
+        },
+        {
+          "name": "Redirect - Python Downloads",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/redirect/python-downloads",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "redirect", "python-downloads"]
+            }
+          }
+        },
+        {
+          "name": "Redirect - YouTube Tutorial",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/redirect/youtube-tutorial",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "redirect", "youtube-tutorial"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "SEARCH - Find URLs",
+      "item": [
+        {
+          "name": "Search - Java",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/search?term=java",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "search"],
+              "query": [{"key": "term", "value": "java"}]
+            }
+          }
+        },
+        {
+          "name": "Search - Python",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/search?term=python",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "search"],
+              "query": [{"key": "term", "value": "python"}]
+            }
+          }
+        },
+        {
+          "name": "Search - Tutorial",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/search?term=tutorial",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "search"],
+              "query": [{"key": "term", "value": "tutorial"}]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ANALYTICS - View Statistics",
+      "item": [
+        {
+          "name": "Top 5 Clicked URLs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/analytics/top?limit=5",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "analytics", "top"],
+              "query": [{"key": "limit", "value": "5"}]
+            }
+          }
+        },
+        {
+          "name": "Top 10 Clicked URLs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/urls/analytics/top?limit=10",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "analytics", "top"],
+              "query": [{"key": "limit", "value": "10"}]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "UPDATE - Modify URLs",
+      "item": [
+        {
+          "name": "Update - Spring Boot Description",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {"key": "Content-Type", "value": "application/json"}
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"description\": \"Updated: Spring Boot Framework - Latest Stable Release\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/urls/1",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "DELETE - Remove URLs",
+      "item": [
+        {
+          "name": "Delete - URL by ID",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/urls/1",
+              "host": ["{{base_url}}"],
+              "path": ["urls", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "HEALTH - Verify Service",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+
